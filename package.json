@@ -1,0 +1,31 @@
+{
+  "name": "@casual-ui/styles",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    "./dist/style.css": "./dist/style.css",
+    "./src/*": "./src/*",
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "author": {
+    "email": "1197160272@qq.com",
+    "name": "Dongsheng Zhao"
+  },
+  "repository": {
+    "url": "https://github.com/Blackman99/casual-ui.git",
+    "directory": "/packages/styles"
+  },
+  "devDependencies": {
+    "rollup": "^2.76.0",
+    "rollup-plugin-scss": "3",
+    "sass": "^1.52.1",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  }
+}

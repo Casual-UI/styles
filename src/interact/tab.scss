@@ -1,0 +1,46 @@
+.c-tabs {
+  position: relative;
+  overflow: hidden;
+
+  &--header {
+    position: relative;
+
+    &-item {
+      cursor: pointer;
+      transition: background-color 0.2s var(--casual-ease-in-out-cubic);
+
+      &:hover {
+        background-color: var(--casual-primary-pale);
+      }
+
+      &-active {
+        color: var(--casual-primary);
+      }
+    }
+
+    &-active-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100px;
+      background-color: var(--casual-primary);
+      transition: all 0.2s var(--casual-ease-in-out-cubic);
+    }
+  }
+
+  &--body {
+    position: relative;
+
+    @each $name, $size in $basic-padding-sizes {
+      &.c-pa-#{$name} {
+        .c-tabs--body-item {
+          &.c-date-panel-leave-active,
+          &.c-date-panel-reverse-leave-active {
+            top: $size;
+          }
+        }
+      }
+    }
+  }
+}
