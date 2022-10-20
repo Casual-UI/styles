@@ -1,8 +1,9 @@
 {
   "name": "@casual-ui/styles",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "main": "src/index.js",
+  "files": ["dist"],
   "exports": {
     "./dist/style.css": "./dist/style.css",
     "./src/*": "./src/*",
