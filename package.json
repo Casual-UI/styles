@@ -16,8 +16,7 @@
     "name": "Dongsheng Zhao"
   },
   "repository": {
-    "url": "https://github.com/Blackman99/casual-ui.git",
-    "directory": "/packages/styles"
+    "url": "https://github.com/Casual-UI/styles.git"
   },
   "publishConfig": {
     "exports": {
