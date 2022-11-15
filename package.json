@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "files": ["dist"],
   "exports": {
-    "./dist/style.css": "./dist/style.css"
+    ".": "./src/index.js",
+    "./src/index.scss": "./src/index.scss"
   },
   "scripts": {
     "build": "rollup -c rollup.config.js"
@@ -17,6 +18,11 @@
   "repository": {
     "url": "https://github.com/Blackman99/casual-ui.git",
     "directory": "/packages/styles"
+  },
+  "publishConfig": {
+    "exports": {
+      "./dist/style.css": "./dist/style.css"
+    }
   },
   "devDependencies": {
     "rollup": "^2.76.0",
