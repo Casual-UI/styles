@@ -96,7 +96,6 @@ $directions: ("left": $left, "top": $top, "right": $right, "bottom": $bottom);
   %c-gutter-#{$size},
   %c-gutter-y-#{$size} {
     margin-top: -$val;
-    margin-bottom: -$val;
 
     > * {
       padding-top: $val;
@@ -108,7 +107,6 @@ $directions: ("left": $left, "top": $top, "right": $right, "bottom": $bottom);
   %c-gutter-#{$size},
   %c-gutter-x-#{$size} {
     margin-left: -$val;
-    margin-right: -$val;
 
     > * {
       padding-left: $val;
