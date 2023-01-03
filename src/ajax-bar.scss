@@ -1,0 +1,39 @@
+.c-ajax-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 9999999;
+
+  &--progress {
+    height: 100%;
+    width: var(--casual-ajax-bar-width);
+  }
+
+  &--theme {
+    &-primary {
+      .c-ajax-bar--progress {
+        background-color: var(--casual-primary);
+      }
+    }
+
+    &-secondary {
+      .c-ajax-bar--progress {
+        background-color: var(--casual-secondary);
+      }
+    }
+
+    &-warning {
+      .c-ajax-bar--progress {
+        background-color: var(--casual-warning);
+      }
+    }
+
+    &-negative {
+      .c-ajax-bar--progress {
+        background-color: var(--casual-negative);
+      }
+    }
+  }
+}
