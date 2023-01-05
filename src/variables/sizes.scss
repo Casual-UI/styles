@@ -98,7 +98,7 @@ $directions: ("left": $left, "top": $top, "right": $right, "bottom": $bottom);
     margin-top: -$val;
 
     > * {
-      margin-top: $val;
+      padding-top: $val;
     }
   }
   .c-gutter-#{$size},
@@ -108,7 +108,7 @@ $directions: ("left": $left, "top": $top, "right": $right, "bottom": $bottom);
     margin-left: -$val;
 
     > * {
-      margin-left: $val;
+      padding-left: $val;
     }
   }
 }
