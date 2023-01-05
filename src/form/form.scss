@@ -7,6 +7,10 @@
       flex-shrink: 0;
     }
 
+    &--maybe-error {
+      padding-bottom: 12px;
+    }
+
     &--content-wrapper {
       position: relative;
       align-self: stretch;
@@ -57,6 +61,7 @@
     }
   }
 
+  // TODO: validating style
   &--validating-loading {
     position: absolute;
     top: 0;
