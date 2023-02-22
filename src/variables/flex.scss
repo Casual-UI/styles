@@ -8,7 +8,9 @@ $flex-justify-maps: (
   "evenly": space-evenly,
   "around": space-around
 );
+
 $flex-align-maps: ("start": flex-start, "end": flex-end, "center": center, "baseline": baseline, "stretch": stretch);
+
 $c-columns: 12;
 
 .c-row,
