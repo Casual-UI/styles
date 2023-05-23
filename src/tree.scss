@@ -1,0 +1,30 @@
+.c-tree {
+  &--title {
+    @extend %c-flex, %c-items-center;
+  }
+  &--leaf {
+    @extend %c-pa-xs;
+  }
+  &--leading-icon {
+    @extend %c-mr-xs;
+    font-size: 18px;
+    transition: transform .2s ease-in-out;
+    &--expanded {
+      transform: rotate(90deg);
+    };
+  }
+  &--sub {
+    @extend .c-pl-xl;
+  }
+  .c-expansion {
+    &--body {
+      position: relative;
+    }
+    &--header {
+      @extend %c-py-sm, %c-px-xs;
+      &:not(:hover):not(:active) {
+        background-color: unset;
+      }
+    }
+  }
+}
