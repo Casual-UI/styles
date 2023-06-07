@@ -27,12 +27,12 @@
     }
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
-    "rollup": "^2.76.0",
+    "@changesets/cli": "^2.26.1",
+    "rollup": "^2.79.1",
     "rollup-plugin-scss": "3",
-    "sass": "^1.52.1",
-    "stylelint": "^14.6.1",
-    "stylelint-config-prettier": "^9.0.3",
+    "sass": "^1.62.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0"
   }
