@@ -1,5 +1,11 @@
 # @casual-ui/styles
 
+## 0.1.1
+
+### Patch Changes
+
+- [`084d640`](https://github.com/Casual-UI/styles/commit/084d640cde59c64b1123954b5fdbfbfe6f4dbcde) Thanks [@Blackman99](https://github.com/Blackman99)! - chore: update deps
+
 ## 0.1.0
 
 ### Minor Changes
