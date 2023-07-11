@@ -53,6 +53,8 @@ $select-dropdown-z-index: 9;
 
 // table
 $table-striped-bg: color.adjust(#fff, $lightness: -3%);
+$table-sticky-shadow-left: 3px 3px 3px 0 rgb(0 0 0 / 10%);
+$table-sticky-shadow-right: -3px 3px 3px 0 rgb(0 0 0 / 10%);
 
 // popup
 $popup-bg: rgba(#000, 0.6);
@@ -127,6 +129,8 @@ $tooltip-color: rgb(231 227 227);
   --casual-table-bg: #{$pure-white};
   --casual-table-divider-color: #{$normal-bg};
   --casual-table-striped-bg: #{$table-striped-bg};
+  --casual-table-sticky-shadow-left: #{$table-sticky-shadow-left};
+  --casual-table-sticky-shadow-right: #{$table-sticky-shadow-right};
 
   // popup
   --casual-popup-bg: #{$popup-bg};

@@ -18,6 +18,8 @@ $popup-bg-dark: rgba(#fff, 0.6);
 $light-bg-dark: #0d0904;
 $input-placeholder-dark: #3f456e;
 $tooltip-color-dark: rgb(41 38 38);
+$table-sticky-shadow-left: 3px 3px 3px 0 rgb(255 255 255 / 10%);
+$table-sticky-shadow-right: -3px 3px 3px 0 rgb(255 255 255 / 10%);
 
 html.dark,
 html[data-theme="dark"] {
@@ -31,26 +33,21 @@ html[data-theme="dark"] {
   --casual-input-bg-lighter: #{$input-bg-lighter-dark};
   --casual-select-bg: var(--casual-input-bg-lighter);
   --casual-table-bg: #{$table-bg-dark};
-
-  // 文案色
   --casual-copywriting-normal: #{$copywriting-normal-dark};
   --casual-copywriting-light: #{$copywriting-light-dark};
   --casual-normal-bg: #{$normal-bg-dark};
   --casual-toggle-dot-bg: #{$toggle-dot-bg-dark};
-
-  // 弹出层
   --casual-popup-content-bg: #{$popup-content-bg-dark};
   --casual-popup-bg: #{$popup-bg-dark};
-
-  // 工具提示
   --casual-tooltip-bg: #{$tooltip-bg-dark};
   --casual-tooltip-color: #{$tooltip-color-dark};
   --casual-light-bg: #{$light-bg-dark};
-
-  // 输入框
   --casual-input-placeholder: #{$input-placeholder-dark};
   --casual-input-prefix-suffix-divider: #{$input-placeholder-dark};
   --casual-input-bg: #282c34;
   --casual-input-bg-darker: #262626;
   --casual-input-bg-darker2: #222;
+  --casual-table-sticky-shadow-left: #{$table-sticky-shadow-left};
+  --casual-table-sticky-shadow-right: #{$table-sticky-shadow-right};
+
 }

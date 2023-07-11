@@ -1,4 +1,7 @@
 .c-table {
+  overflow-x: auto;
+  position: relative;
+
   &--table {
     background-color: var(--casual-table-bg);
     border-collapse: separate;
@@ -7,10 +10,10 @@
     word-wrap: break-word;
     word-break: break-all;
     text-align: left;
-    table-layout: auto;
     font-size: 14px;
     display: table;
     line-height: 1.5em;
+    table-layout: fixed;
   }
 
   thead,
@@ -42,4 +45,35 @@
     text-align: center;
     color: var(--casual-copywriting-light);
   }
+
+  $names: td, th;
+
+  @each $name in $names {
+    &--#{$name} {
+      &--sticky {
+        &-left,
+        &-right {
+          background-color: var(--casual-table-bg);
+          position: sticky;
+        }
+
+        &-left {
+          left: var(--c-table-sticky-left, 0);
+        }
+
+        &-right {
+          right: var(--c-table-sticky-right, 0);
+        }
+      
+        &-max-left {
+          box-shadow: var(--casual-table-sticky-shadow-left);
+        }
+
+        &-min-right {
+          box-shadow: var(--casual-table-sticky-shadow-right);
+        }
+      }
+    }
+  }
+  
 }
