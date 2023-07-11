@@ -20,6 +20,7 @@ $input-placeholder-dark: #3f456e;
 $tooltip-color-dark: rgb(41 38 38);
 $table-sticky-shadow-left: 3px 3px 3px 0 rgb(255 255 255 / 10%);
 $table-sticky-shadow-right: -3px 3px 3px 0 rgb(255 255 255 / 10%);
+$table-striped-bg: #202020;
 
 html.dark,
 html[data-theme="dark"] {
@@ -49,5 +50,5 @@ html[data-theme="dark"] {
   --casual-input-bg-darker2: #222;
   --casual-table-sticky-shadow-left: #{$table-sticky-shadow-left};
   --casual-table-sticky-shadow-right: #{$table-sticky-shadow-right};
-
+  --casual-table-striped-bg: #{$table-striped-bg};
 }
