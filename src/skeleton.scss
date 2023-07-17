@@ -1,0 +1,35 @@
+@keyframes c-skeleton-wave {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.c-skeleton {
+  position: relative;
+  background-color: var(--casual-normal-bg);
+  overflow: hidden;
+  cursor: progress;
+
+  &--shape {
+    &-circle {
+      border-radius: 50%; 
+    }
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0%),
+      rgb(255 255 255 / 50%),
+      rgb(255 255 255 / 0%)
+    );
+    animation: c-skeleton-wave 1.5s linear .5s infinite;
+  }
+}
