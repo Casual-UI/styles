@@ -1,0 +1,26 @@
+.c-parallax {
+  position: relative;
+  overflow: hidden;
+
+  &--bg {
+    position: absolute;
+    inset: 0;
+  }
+
+  &--image {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 0;
+    display: initial;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, var(--c-parallax-top));
+  }
+
+  &--front {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+  }
+}

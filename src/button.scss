@@ -12,10 +12,7 @@
   &--focus-helper {
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     transition: opacity 0.1s var(--casual-ease-in-cubic);
     border-radius: inherit;
   }
@@ -34,7 +31,7 @@
     color: #fff;
   }
 
-  &:not(:disabled):not(.c-button--flat):active {
+  &:not(:disabled, .c-button--flat):active {
     box-shadow:
       0 3px 5px -1px #0003,
       0 5px 8px #00000024,
@@ -169,7 +166,7 @@
     }
   }
 
-  &:not(:disabled):not(.c-button--loading):not(.c-button--flat).c-button {
+  &:not(:disabled, .c-button--loading, .c-button--flat).c-button {
     &--theme {
       &-primary {
         &:hover {
