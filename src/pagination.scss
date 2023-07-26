@@ -1,0 +1,32 @@
+@use 'sass:map';
+
+.c-pagination {
+  @each $size, $height in $basic-sizes {
+    &--#{$size} {
+      .c-button {
+        height: $height;
+        width: $height;
+        min-width: unset;
+      }
+
+      &.c-pagination {
+        &--rounded {
+          .c-button {
+            border-radius: map.get($basic-rounded-sizes, $size);
+          }
+        }
+
+        &--circle {
+          .c-button {
+            border-radius: 50%;
+          }
+        }
+      }
+
+    }
+  }
+
+  [class^="i-material-symbols"] {
+    flex-shrink: 0;
+  }
+}

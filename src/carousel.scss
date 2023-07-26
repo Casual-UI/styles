@@ -16,10 +16,7 @@
     &--bg {
       opacity: 0.2;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       z-index: 3;
     }
 
@@ -92,10 +89,7 @@
 
   &--indicators {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     z-index: 3;
     pointer-events: none;
   }
@@ -121,10 +115,7 @@
 
   &--slider-item {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
   }
 
   &--control {

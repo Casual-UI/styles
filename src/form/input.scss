@@ -2,11 +2,8 @@
   content: " ";
   pointer-events: none;
   position: absolute;
-  left: 0;
-  top: 0;
+  inset: 0;
   border-radius: inherit;
-  right: 0;
-  bottom: 0;
   z-index: 4;
   border: 1px solid var(--casual-primary-lighter2);
   opacity: 0;
@@ -32,7 +29,7 @@
       }
     }
 
-    &:not(.c-input--disabled):not(.c-input--focused):not(.c-input--loading):hover {
+    &:not(.c-input--disabled, .c-input--focused, .c-input--loading):hover {
       background-color: var(--casual-input-bg-darker);
     }
 
