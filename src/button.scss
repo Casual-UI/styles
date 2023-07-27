@@ -119,48 +119,50 @@
   &--flat {
     background-color: transparent;
 
-    &:hover {
-      .c-button--focus-helper {
-        opacity: 0.2;
-      }
-    }
-
-    &:active {
-      .c-button--focus-helper {
-        opacity: 0.4;
-      }
-    }
-
-    &.c-button--theme {
-      &-primary {
-        color: var(--casual-primary);
-
+    &:not(:disabled) {
+      &:active {
         .c-button--focus-helper {
-          background-color: var(--casual-primary);
+          opacity: 0.4;
         }
       }
-
-      &-secondary {
-        color: var(--casual-secondary);
-
-        .c-button--focus-helper {
-          background-color: var(--casual-secondary);
+  
+      &.c-button--theme {
+        &-primary {
+          color: var(--casual-primary);
+  
+          .c-button--focus-helper {
+            background-color: var(--casual-primary);
+          }
+        }
+  
+        &-secondary {
+          color: var(--casual-secondary);
+  
+          .c-button--focus-helper {
+            background-color: var(--casual-secondary);
+          }
+        }
+  
+        &-warning {
+          color: var(--casual-warning);
+  
+          .c-button--focus-helper {
+            background-color: var(--casual-warning);
+          }
+        }
+  
+        &-negative {
+          color: var(--casual-negative);
+  
+          .c-button--focus-helper {
+            background-color: var(--casual-negative);
+          }
         }
       }
-
-      &-warning {
-        color: var(--casual-warning);
-
+  
+      &:hover {
         .c-button--focus-helper {
-          background-color: var(--casual-warning);
-        }
-      }
-
-      &-negative {
-        color: var(--casual-negative);
-
-        .c-button--focus-helper {
-          background-color: var(--casual-negative);
+          opacity: 0.2;
         }
       }
     }
