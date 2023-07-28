@@ -110,6 +110,9 @@ $positions: "start", "center", "end";
         stroke-dashoffset: 0;
         transform-origin: center;
         transform: rotate(-90deg);
+        animation-name: close-count-down;
+        animation-duration: var(--c-notification-duration);
+        animation-timing-function: linear;
 
         &-with-initial-state {
           stroke-dashoffset: -63;
