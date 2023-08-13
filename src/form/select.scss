@@ -47,7 +47,10 @@
   &--arrow {
     color: var(--casual-input-placeholder);
     transition: transform var(--casual-ease-in-cubic) 0.2s;
-    font-size: 1.5em;
+    
+    [i-ph-caret-down-light] {
+      font-size: 1.3em;
+    }
 
     &-show-options {
       transform: rotate(180deg);
