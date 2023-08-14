@@ -1,0 +1,15 @@
+.c-image {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--casual-copywriting-normal);
+
+  &--loading {
+    @extend %c-flex, %c-items-center, %c-justify-center;
+
+    position: absolute;
+    inset: 0;
+    font-size: 3em;
+  }
+}
