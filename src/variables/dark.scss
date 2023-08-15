@@ -24,6 +24,7 @@ $table-striped-bg: #202020;
 
 html.dark,
 html[data-theme="dark"] {
+  --casual-pure-white: #000;
   --casual-primary: #{$primary-dark};
   --casual-secondary: #{$secondary-dark};
   --casual-warning: #{$warning-dark};

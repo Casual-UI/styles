@@ -10,7 +10,7 @@
     border-radius: 50%;
 
     &:hover {
-      color: #fff;
+      color: var(--casual-pure-white);
     }
   }
 
@@ -22,15 +22,36 @@
       .c-tag--close-icon:hover {
         background-color: var(--casual-primary);
       }
+
+      &.c-tag--solid {
+        background-color: var(--casual-primary);
+        color: var(--casual-primary-pale);
+
+        .c-tag--close-icon:hover {
+          background-color: var(--casual-primary-pale);
+          color: var(--casual-primary);
+        }
+      }
     }
 
     &-secondary {
       color: var(--casual-secondary);
       background-color: var(--casual-secondary-pale);
-
+      
       .c-tag--close-icon:hover {
         background-color: var(--casual-secondary);
       }
+      
+      &.c-tag--solid {
+        background-color: var(--casual-secondary);
+        color: var(--casual-secondary-pale);
+
+        .c-tag--close-icon:hover {
+          background-color: var(--casual-secondary-pale);
+          color: var(--casual-secondary);
+        }
+      }
+
     }
 
     &-warning {
@@ -40,6 +61,17 @@
       .c-tag--close-icon:hover {
         background-color: var(--casual-warning);
       }
+
+      &.c-tag--solid {
+        background-color: var(--casual-warning);
+        color: var(--casual-warning-pale);
+
+        .c-tag--close-icon:hover {
+          background-color: var(--casual-warning-pale);
+          color: var(--casual-warning);
+        }
+      }
+     
     }
 
     &-negative {
@@ -48,6 +80,16 @@
 
       .c-tag--close-icon:hover {
         background-color: var(--casual-negative);
+      }
+
+      &.c-tag--solid {
+        background-color: var(--casual-negative);
+        color: var(--casual-negative-pale);
+
+        .c-tag--close-icon:hover {
+          background-color: var(--casual-negative-pale);
+          color: var(--casual-negative);
+        }
       }
     }
   }
