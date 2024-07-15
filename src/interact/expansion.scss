@@ -15,10 +15,16 @@
     &:active {
       background-color: var(--casual-input-bg-darker2);
     }
+
+    &-left {
+      @extend %c-flex, %c-items-center, %c-flex-grow;
+    }
   }
 
   &--icon {
-    @extend %c-mr-md;
+    @extend %c-mr-sm, %c-flex, %c-items-center;
+
+    font-size: 18px;
   }
 
   &--title {
@@ -34,10 +40,7 @@
 
   &--arrow {
     transition: transform $ease-in-out-quadratic 0.2s;
-
-    .c-icon {
-      font-size: 24px;
-    }
+    font-size: 18px;
 
     &-expanded {
       transform: rotate(180deg);
